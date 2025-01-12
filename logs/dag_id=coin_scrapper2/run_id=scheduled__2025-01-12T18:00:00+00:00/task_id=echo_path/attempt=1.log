@@ -1,0 +1,28 @@
+[2025-01-12T18:05:02.100+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: coin_scrapper2.echo_path scheduled__2025-01-12T18:00:00+00:00 [queued]>
+[2025-01-12T18:05:02.107+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: coin_scrapper2.echo_path scheduled__2025-01-12T18:00:00+00:00 [queued]>
+[2025-01-12T18:05:02.107+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-12T18:05:02.107+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 2
+[2025-01-12T18:05:02.107+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2025-01-12T18:05:02.114+0000] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): echo_path> on 2025-01-12 18:00:00+00:00
+[2025-01-12T18:05:02.117+0000] {standard_task_runner.py:52} INFO - Started process 587 to run task
+[2025-01-12T18:05:02.121+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'coin_scrapper2', 'echo_path', 'scheduled__2025-01-12T18:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/AirflowCrypto2.py', '--cfg-path', '/tmp/tmponvc4guh', '--error-file', '/tmp/tmprqhfjv8e']
+[2025-01-12T18:05:02.122+0000] {standard_task_runner.py:80} INFO - Job 22: Subtask echo_path
+[2025-01-12T18:05:02.193+0000] {task_command.py:371} INFO - Running <TaskInstance: coin_scrapper2.echo_path scheduled__2025-01-12T18:00:00+00:00 [running]> on host a71d0af9bc73
+[2025-01-12T18:05:02.249+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=terry
+AIRFLOW_CTX_DAG_ID=coin_scrapper2
+AIRFLOW_CTX_TASK_ID=echo_path
+AIRFLOW_CTX_EXECUTION_DATE=2025-01-12T18:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-01-12T18:00:00+00:00
+[2025-01-12T18:05:02.250+0000] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-01-12T18:05:02.251+0000] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'echo $PATH']
+[2025-01-12T18:05:02.261+0000] {subprocess.py:85} INFO - Output:
+[2025-01-12T18:05:02.264+0000] {subprocess.py:92} INFO - /usr/lib/jvm/java-11-openjdk-amd64/bin:/root/bin:/home/***/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[2025-01-12T18:05:02.265+0000] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-01-12T18:05:02.282+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=coin_scrapper2, task_id=echo_path, execution_date=20250112T180000, start_date=20250112T180502, end_date=20250112T180502
+[2025-01-12T18:05:02.303+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-01-12T18:05:02.319+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
