@@ -2,4 +2,6 @@
 
 - build docker using docker `docker build -t airflow-spark .`
 - run docker compose using `docker compose -f airflow.yaml up`
-- when running the airflow, use this to enable pyspark `sudo -u airflow python script.py`
+
+# Running the python script on Airflow
+- run the script by `sudo -u airflow python /opt/airflow/scripts/script.py`
